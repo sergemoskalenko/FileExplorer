@@ -23,7 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
+import UIKit
 
 extension UITableView {
     func registerCell(ofClass cellClass: AnyClass) {
@@ -38,7 +38,7 @@ extension UITableView {
         return cell
     }
     
-    func makeCell(with style: UITableViewCellStyle) -> UITableViewCell {
+    func makeCell(with style: UITableViewCell.CellStyle) -> UITableViewCell {
         return UITableViewCell(style: style, reuseIdentifier: String(describing: UITableViewCell.self))
     }
 }

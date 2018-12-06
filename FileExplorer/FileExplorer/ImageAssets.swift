@@ -23,7 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
+import UIKit
 
 enum ImageAssets {
     static let genericDirectoryIcon = UIImage.make(for: "GenericFolderIcon")!

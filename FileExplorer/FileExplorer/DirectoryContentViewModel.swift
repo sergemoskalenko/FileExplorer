@@ -23,7 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
+import UIKit
 
 protocol DirectoryContentViewModelDelegate: class {
     func directoryViewModelDidChangeItemsList(_ viewModel: DirectoryContentViewModel)
@@ -201,7 +201,7 @@ final class DirectoryContentViewModel {
     }
 
     func deleteItems(at indexPaths: [IndexPath], completionBlock: @escaping (Result<Void>) -> Void) {
-        let items = indexPaths.flatMap { item(for: $0) }
+        let items = indexPaths.compactMap { item(for: $0) }
         fileService.delete(items: items) { result, removedItems, itemsNotRemovedDueToFailure in
             completionBlock(result)
             self.delegate?.directoryViewModelDidChange(self)

@@ -24,7 +24,7 @@
 //  SOFTWARE.
 
 
-import Foundation
+import UIKit
 
 protocol FileService: class {
     func load(item: Item<Any>, completionBlock: @escaping (Result<LoadedItem<Any>>) -> ())
@@ -103,7 +103,7 @@ final class LocalStorageFileService: FileService {
                                     deletedItems,
                                     itemsNotRemovedDueToFailure)
                 } else {
-                    completionBlock(.success(), deletedItems, itemsNotRemovedDueToFailure)
+                    completionBlock(.success(()), deletedItems, itemsNotRemovedDueToFailure)
                 }
 
             }
