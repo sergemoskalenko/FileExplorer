@@ -3,7 +3,7 @@
 FileExplorer (iOS 9.0+)
 ==============
 Changes by Serge Moskalenko:
-1. Convert to Swift 4.
+1. Converted to Swift 4.
 
 
 
