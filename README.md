@@ -2,6 +2,10 @@
 
 FileExplorer (iOS 9.0+)
 ==============
+Changes by Serge Moskalenko:
+1. Convert to Swift 4.
+
+
 
 👷 Project created and maintained by [Rafał Augustyniak](http://augustyniak.me). You can find me on twitter ([@RaAugustyniak](https://twitter.com/RaAugustyniak)).
 
